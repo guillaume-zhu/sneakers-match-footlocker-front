@@ -286,6 +286,8 @@ footer > nav {
   height: 1.5rem;
   width: 100vw;
   background-color: black;
+  display: flex;
+  justify-content: center;
 }
 
 footer > nav > ul {
@@ -296,9 +298,23 @@ footer > nav > ul {
   gap: 50px;
   padding: 4px;
   font-size: var(--font-size-caption);
+  text-align: center;
 }
 
 footer > nav > ul > li > a {
   color: white;
   text-decoration: none;
+}
+
+/* --- FOOTER RESPONSIVE --- */
+@media (max-width: 768px) {
+  footer > nav {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer > nav {
+    height: 4rem;
+  }
 }
