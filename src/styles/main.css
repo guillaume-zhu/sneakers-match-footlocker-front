@@ -18,3 +18,46 @@ body {
 h1 {
   font-family: "MaSuperPolice", serif;
 }
+
+/* VARIABLES */
+:root {
+  /* Couleur */
+  --vert: #0eda8f;
+  --jaune: #fed702;
+  --fond-sombre: #b1a0ea;
+
+  /* Font size */
+  /* --- Headings (Titres) --- */
+
+  /* 150px */
+  --font-size-heading-large: 9.375rem;
+
+  /* 115px */
+  --font-size-heading-big: 7.1875rem;
+
+  /* 60px */
+  --font-size-heading-medium: 3.75rem;
+
+  /* 44px */
+  --font-size-heading-regular: 2.75rem;
+
+  /* 30px */
+  --font-size-heading-small: 1.875rem;
+
+  /* 24px */
+  --font-size-heading-compact: 1.5rem;
+
+  /* --- Body & UI (Texte courant) --- */
+
+  /* 30px - Même taille que Heading Small */
+  --font-size-body-button: 1.875rem;
+
+  /* 24px "Body medium" et "Body medium bold" */
+  --font-size-body-medium: 1.5rem;
+
+  /* 20px */
+  --font-size-body-small: 1.25rem;
+
+  /* 16px */
+  --font-size-caption: 1rem;
+}
