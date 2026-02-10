@@ -13,10 +13,23 @@
 
 body {
   font-family: "Manrope", sans-serif;
+  overflow: hidden;
 }
 
 h1 {
   font-family: "MaSuperPolice", serif;
+}
+
+html,
+body {
+  scrollbar-width: none;
+
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* VARIABLES */
@@ -25,11 +38,9 @@ h1 {
   --vert: #0eda8f;
   --jaune: #fed702;
   --fond-sombre: #b1a0ea;
+  --noir: #101010;
 
-  /* Font size */
-  /* --- Headings (Titres) --- */
-
-  /* 150px */
+  /* Font size */ /* --- Headings (Titres) --- */ /* 150px */
   --font-size-heading-large: 9.375rem;
 
   /* 115px */
@@ -60,4 +71,22 @@ h1 {
 
   /* 16px */
   --font-size-caption: 1rem;
+}
+
+/* HEADER */
+header > div {
+  height: 1.3rem;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 4px;
+  scrollbar-width: none;
+}
+
+header > div {
+  scrollbar-width: none;
 }
