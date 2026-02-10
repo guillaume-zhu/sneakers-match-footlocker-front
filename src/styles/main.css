@@ -11,9 +11,15 @@
   font-display: swap;
 }
 
+/* GENRAL RÈGLES */
 body {
   font-family: "Manrope", sans-serif;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  align-items: center;
 }
 
 h1 {
@@ -82,12 +88,8 @@ header > div {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
+  gap: 30px;
   padding: 4px;
-  scrollbar-width: none;
-}
-
-header > div {
   scrollbar-width: none;
 }
 
