@@ -8,8 +8,8 @@
             name="description"
             content="Phrase descriptive d’environ 160 caractères"
         />
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./src/styles/reset.css" />
+        <link rel="stylesheet" href="./src/styles/jeux.css" />
         <link rel="shortcut icon" href="favicon.png" type="image/png" />
     </head>
     <body>
@@ -18,39 +18,52 @@
         </header>
 
         <main>
-            <section>
-                <h1>SNEAKERS MATCH</h1>
-                <p>Retourne les cartes et associe les paires identiques</p>
-            </section>
-
-            <section>
-                <div>
-                    <span>Tentatives <strong>0</strong></span>
-                </div>
-                <div>
-                    <span>Temps <strong>00:00</strong></span>
-                </div>
-            </section>
-
-            <section>
-                <div>
-                    <button type="button">Foot Locker</button>
-                    <button type="button">
-                        <img src="sneaker-1.jpg" alt="Sneaker blanche" />
-                    </button>
-                    <button type="button">Foot Locker</button>
-                    <button type="button">Foot Locker</button>
-                </div>
-
-                <div>
-                    <button type="button">Foot Locker</button>
-                    <button type="button">Foot Locker</button>
-                    <button type="button">Foot Locker</button>
-                    <button type="button">
-                        <img src="sneaker-1.jpg" alt="Sneaker blanche" />
-                    </button>
-                </div>
-            </section>
+            <div class="container">
+                <section>
+                    <h1>SNEAKERS MATCH</h1>
+                    <p>Retourne les cartes et associe les paires identiques</p>
+                </section>
+                <section class="game-infos">
+                    <div>
+                        <span>Tentatives <strong>0</strong></span>
+                    </div>
+                    <div>
+                        <span>Temps <strong>00:00</strong></span>
+                    </div>
+                </section>
+                <section class="memory-grid">
+                    <img
+                        src="./src/assets/images/card-dos.png"
+                        alt="une carte de sneakers de dos "
+                        class="memory-grid-items"
+                    />
+                    <img
+                        src="./src/assets/images/card-face.png"
+                        alt="une carte de sneakers de face"
+                        class="memory-grid-items"
+                    />
+                    <img
+                        src="./src/assets/images/card-dos.png"
+                        alt="une carte de sneakers de dos "
+                        class="memory-grid-items"
+                    />
+                    <img
+                        src="./src/assets/images/card-dos.png"
+                        alt="une carte de sneakers de dos "
+                        class="memory-grid-items"
+                    />
+                    <img
+                        src="./src/assets/images/card-dos.png"
+                        alt="une carte de sneakers de dos "
+                        class="memory-grid-items"
+                    />
+                    <img
+                        src="./src/assets/images/card-face.png"
+                        alt="une carte de sneakers de face"
+                        class="memory-grid-items"
+                    />
+                </section>
+            </div>
         </main>
 
         <footer>
