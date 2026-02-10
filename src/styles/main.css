@@ -104,6 +104,19 @@ header > div {
   scrollbar-width: none;
 }
 
+/* --- HEADER RESPONSIVE --- */
+@media (max-width: 768px) {
+  header > div {
+    height: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header > div {
+    height: 3rem;
+  }
+}
+
 /* ------ ACCUEIL ------ */
 .accueil {
   display: flex;
@@ -313,7 +326,7 @@ footer > nav > ul > li > a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   footer > nav {
     height: 4rem;
   }
