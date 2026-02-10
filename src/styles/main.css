@@ -1,31 +1,38 @@
-/* FONT IMPORT */
+/* ------ FONT IMPORT ------ */
 /* Manrope */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 /* Tricky */
 @font-face {
   font-family: "Tricky";
-  src: url("./assets/fonts/Demotricky-mLA9m.ttf") format("truetype");
+  src: url("../assets/fonts/Demotricky-mLA9m.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-/* GENRAL RÈGLES */
+/* ------ GENERAL RÈGLES ------*/
 body {
   font-family: "Manrope", sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  width: 100vw;
   align-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
   font-family: "MaSuperPolice", serif;
 }
 
+/* ------ NO SCROLL ------ */
 html,
 body {
   scrollbar-width: none;
@@ -38,7 +45,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* VARIABLES */
+/* ------ VARIABLES ------ */
 :root {
   /* Couleur */
   --vert: #0eda8f;
@@ -69,7 +76,7 @@ body::-webkit-scrollbar {
   /* 30px - Même taille que Heading Small */
   --font-size-body-button: 1.875rem;
 
-  /* 24px "Body medium" et "Body medium bold" */
+  /* 24px Body medium et Body medium bold */
   --font-size-body-medium: 1.5rem;
 
   /* 20px */
@@ -79,7 +86,11 @@ body::-webkit-scrollbar {
   --font-size-caption: 1rem;
 }
 
-/* HEADER */
+/* ------ HEADER ------ */
+header {
+  z-index: 1001;
+}
+
 header > div {
   height: 1.5rem;
   width: 100vw;
@@ -93,7 +104,184 @@ header > div {
   scrollbar-width: none;
 }
 
-/* FOOTER */
+/* ------ ACCUEIL ------ */
+.accueil {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  background-image: url(../assets/images/gradient-bg1-accueil.jpg);
+  background-repeat: none;
+  background-size: cover;
+  position: relative;
+}
+
+.accueil > div {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 100%;
+  z-index: 900;
+}
+
+/* Eléments sur bg */
+.accueil-fluid {
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  z-index: 1;
+}
+
+.accueil-gradient-bar {
+  height: 100%;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 10;
+}
+
+.accueil-black-bars {
+  position: absolute;
+  left: 0px;
+  z-index: 0;
+  height: 100%;
+}
+
+/* Bloc central */
+.accueil-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.accueil-heading {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accueil-heading p {
+  text-align: center;
+  font-size: var(--font-size-body-medium);
+  font-weight: 600;
+  color: white;
+}
+
+.accueil-text-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  width: fit-content;
+  text-align: center;
+  /* background-color: red; */
+  width: 85%;
+}
+
+.accueil-text-body {
+  text-align: center;
+  line-height: 160%;
+}
+
+.accueil-text-button p {
+  font-size: var(--font-size-body-medium);
+  color: white;
+  text-align: center;
+}
+
+.accueil-text-button button {
+  background-color: var(--vert);
+  border-radius: 50px;
+  border: 3px solid var(--noir);
+  width: 170px;
+  height: 70px;
+  font-size: var(--font-size-body-button);
+  box-shadow: 5px 5px 0 0 #101010;
+}
+
+/* Partie gauche */
+.accueil-left {
+  position: relative;
+}
+
+.accueil-ny-group {
+  position: absolute;
+  border: 1px solid blue;
+  width: 340px;
+  height: 545px;
+  bottom: 10%;
+  right: 50px;
+}
+
+.accueil-ny-group img {
+  width: 85%;
+  height: auto;
+  position: absolute;
+}
+
+.accueil-ny-group > img:first-child {
+  bottom: 0%;
+  left: 0%;
+  z-index: 1;
+}
+.accueil-ny-group > img:nth-child(2) {
+  bottom: 6%;
+  left: 10%;
+  z-index: 2;
+}
+.accueil-ny-group > img:nth-child(3) {
+  bottom: 12%;
+  left: 20%;
+  z-index: 3;
+}
+
+/* Partie droite */
+.accueil-right {
+  position: relative;
+}
+
+.accueil-shoes-group {
+  border: 1px solid green;
+  height: 630px;
+  width: 250px;
+  position: relative;
+  margin-top: 15%;
+  left: 40px;
+}
+
+.accueil-shoes-group > img {
+  width: 100%;
+  height: auto;
+}
+
+.accueil-shoes-group > img:first-child {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+}
+.accueil-shoes-group > img:nth-child(2) {
+  position: absolute;
+  z-index: 9;
+  top: 20%;
+}
+.accueil-shoes-group > img:nth-child(3) {
+  position: absolute;
+  z-index: 8;
+  top: 40%;
+}
+.accueil-shoes-group > img:nth-child(4) {
+  position: absolute;
+  z-index: 7;
+  top: 60%;
+}
+
+/* ------ FOOTER ------ */
+footer {
+  z-index: 1000;
+}
+
 footer > nav {
   height: 1.5rem;
   width: 100vw;
@@ -105,7 +293,7 @@ footer > nav > ul {
   justify-content: center;
   align-items: center;
   color: white;
-  gap: 100px;
+  gap: 50px;
   padding: 4px;
   font-size: var(--font-size-caption);
 }
