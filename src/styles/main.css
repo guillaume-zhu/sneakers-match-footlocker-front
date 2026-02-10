@@ -75,7 +75,7 @@ body::-webkit-scrollbar {
 
 /* HEADER */
 header > div {
-  height: 1.3rem;
+  height: 1.5rem;
   width: 100vw;
   overflow-x: hidden;
   background-color: black;
@@ -89,4 +89,26 @@ header > div {
 
 header > div {
   scrollbar-width: none;
+}
+
+/* FOOTER */
+footer > nav {
+  height: 1.5rem;
+  width: 100vw;
+  background-color: black;
+}
+
+footer > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 100px;
+  padding: 4px;
+  font-size: var(--font-size-caption);
+}
+
+footer > nav > ul > li > a {
+  color: white;
+  text-decoration: none;
 }
