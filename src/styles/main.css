@@ -1,0 +1,20 @@
+/* FONT IMPORT */
+/* Manrope */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Tricky */
+@font-face {
+  font-family: "Tricky";
+  src: url("./assets/fonts/Demotricky-mLA9m.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+h1 {
+  font-family: "MaSuperPolice", serif;
+}
