@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./src/styles/main.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/png" />
   </head>
+
   <body>
     <header>
       <div>
@@ -31,29 +32,59 @@
     </header>
 
     <main>
-      <section>
-        <p>Sneakers Match</p>
-        <h1>JOUEZ MATCHZ GAGNEZ</h1>
-      </section>
+      <div class="container accueil">
+        <!-- Partie gauche -->
+        <div class="accueil-left">
+          <div class="accueil-ny-group">
+            <img src="./src/assets/images/image-ny-1.png" alt="image new york" />
+            <img src="./src/assets/images/image-ny-1.png" alt="image new york" />
+            <img src="./src/assets/images/image-ny-1.png" alt="image new york" />
+          </div>
+        </div>
 
-      <aside>
-        <img src="statue-liberte.jpg" alt="Statue de la Liberté New York" />
-      </aside>
+        <!-- Partie centrale -->
+        <div class="accueil-center">
+          <div class="accueil-heading">
+            <p>Sneaker Match</p>
+            <img src="./src/assets/images/gagnez-heading.svg" alt="play match and win" />
+          </div>
 
-      <div>
-        <img src="sneaker-blanche.jpg" alt="Sneaker blanche" />
+          <div class="accueil-text-button">
+            <p class="accueil-text-body">
+              Tentez de former les paires parfaites et débloquez des récompenses exclusives.<br />
+              À la clé : <span>un voyage à New York</span> et des dizaines d'autres cadeaux
+            </p>
+
+            <button>Jouer</button>
+          </div>
+
+          <!-- Partie mobile images -->
+          <div class="accueil-center-image-mobile">
+            <div class="accueil-shoes-group">
+              <img src="./src/assets/images/ellipse-shoes1.png" alt="shoes nike air force" />
+              <img src="./src/assets/images/ellipse-shoes2.png" alt="shoes nike air force" />
+              <img src="./src/assets/images/ellipse-shoes3.png" alt="shoes nike air force" />
+              <img src="./src/assets/images/ellipse-shoes4.png" alt="shoes nike air force" />
+            </div>
+
+            <div class="accueil-ny-group">
+              <img src="./src/assets/images/image-ny-1.png" alt="image new york" />
+              <img src="./src/assets/images/image-ny-1.png" alt="image new york" />
+              <img src="./src/assets/images/image-ny-1.png" alt="image new york" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Partie droite -->
+        <div class="accueil-right">
+          <div class="accueil-shoes-group">
+            <img src="./src/assets/images/ellipse-shoes1.png" alt="shoes nike air force" />
+            <img src="./src/assets/images/ellipse-shoes2.png" alt="shoes nike air force" />
+            <img src="./src/assets/images/ellipse-shoes3.png" alt="shoes nike air force" />
+            <img src="./src/assets/images/ellipse-shoes4.png" alt="shoes nike air force" />
+          </div>
+        </div>
       </div>
-
-      <section>
-        <p>Tentez de former les paires parfaites et débloquez des récompenses exclusives.</p>
-        <p>À la clé : <strong>un voyage à New York</strong> et des dizaines d'autres cadeaux</p>
-      </section>
-
-      <section>
-        <form action="#jouer">
-          <button type="submit">Jouer</button>
-        </form>
-      </section>
     </main>
 
     <footer>
@@ -65,5 +96,30 @@
         </ul>
       </nav>
     </footer>
+
+    <!-- Élements absolute sur le bg -->
+    <img
+      class="accueil-gradient-bar"
+      src="./src/assets/images/gradient-bar-accueil.png"
+      alt="gradient bar"
+    />
+
+    <img
+      class="accueil-fluid"
+      src="./src/assets/images/fluid-1-accueil.png"
+      alt="aplat de dégradé"
+    />
+
+    <img
+      class="accueil-fluid"
+      src="./src/assets/images/fluid-1-accueil.png"
+      alt="aplat de dégradé"
+    />
+
+    <img
+      class="accueil-black-bars"
+      src="./src/assets/images/black-bars.png"
+      alt="black bars foot locker"
+    />
   </body>
 </html>
