@@ -25,7 +25,9 @@ body {
 
 main {
   width: 100%;
-  height: 100%;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
@@ -113,7 +115,7 @@ header > div {
 
 @media (max-width: 480px) {
   header > div {
-    height: 3rem;
+    height: 4rem;
   }
 }
 
@@ -221,7 +223,7 @@ header > div {
 
 .accueil-ny-group {
   position: absolute;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 340px;
   height: 545px;
   bottom: 10%;
@@ -256,7 +258,7 @@ header > div {
 }
 
 .accueil-shoes-group {
-  border: 1px solid green;
+  /* border: 1px solid green; */
   height: 630px;
   width: 250px;
   position: relative;
@@ -288,6 +290,136 @@ header > div {
   position: absolute;
   z-index: 7;
   top: 60%;
+}
+
+/* --- ACCUEIL RESPONSIVE --- */
+.accueil-center-image-mobile {
+  display: none;
+}
+/* max 1080px */
+@media (max-width: 1080px) {
+  .accueil-heading img {
+    width: 100%;
+  }
+  .accueil-text-button p {
+    font-size: 20px;
+  }
+
+  .accueil-shoes-group {
+    width: 70%;
+  }
+  .accueil-shoes-group > img {
+    width: 100%;
+  }
+}
+
+/* max 768px */
+@media (max-width: 768px) {
+  .accueil > div {
+    width: auto;
+  }
+  .accueil-center {
+    flex: 3;
+  }
+  .accueil-left,
+  .accueil-right {
+    width: 10px;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .accueil-shoes-group {
+    height: 400px;
+    left: 15px;
+    width: 100%;
+  }
+  .accueil-shoes-group > img {
+    width: 100%;
+  }
+  .accueil-fluid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .accueil-left,
+  .accueil-right,
+  .accueil-gradient-bar,
+  .accueil-black-bars {
+    display: none;
+  }
+
+  /* bloc center */
+  .accueil-center {
+    padding: 40px;
+    justify-content: flex-start;
+  }
+
+  .accueil-heading img {
+    width: 60%;
+  }
+
+  .accueil-text-button p {
+    font-size: 18px;
+  }
+  .accueil-text-button button {
+    font-size: 22px;
+    width: 120px;
+    height: 52px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accueil-center-image-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+  .accueil-center-image-mobile .accueil-ny-group {
+    width: 200px;
+    height: 200px;
+    /* background-color: red; */
+    bottom: -120px;
+    right: -50px;
+  }
+  .accueil-ny-group img {
+    border: 1px solid var(--noir);
+    border-radius: 8px;
+  }
+
+  .accueil-shoes-group {
+    width: 90px;
+    height: 200px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .accueil-shoes-group img {
+    border: 1.5px solid var(--noir);
+    border-radius: 500px;
+  }
+  .accueil-shoes-group > img:first-child {
+    top: 0;
+  }
+  .accueil-shoes-group > img:nth-child(2) {
+    top: 25%;
+    left: 40%;
+  }
+  .accueil-shoes-group > img:nth-child(3) {
+    top: 50%;
+  }
+  .accueil-shoes-group > img:nth-child(4) {
+    top: 75%;
+    left: 40%;
+  }
+
+  .accueil-fluid {
+    transform: scaleX(-1);
+    width: 120%;
+  }
 }
 
 /* ------ FOOTER ------ */
