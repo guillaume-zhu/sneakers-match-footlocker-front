@@ -11,6 +11,7 @@
   </head>
 
   <body>
+    <!-- HEADER -->
     <header>
       <div>
         <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
@@ -31,24 +32,31 @@
       </div>
     </header>
 
+    <!-- MAIN -->
     <main class="container formulaire-page">
       <div class="formulaire-bloc">
+        <!-- Formulaire -->
         <form action="#" method="post">
           <h1>Formulaire</h1>
 
+          <!-- Input -->
           <div class="formulaire-input-group">
             <div class="formulaire-input-text">
               <label for="prenom"
-                >Prénom *<input type="text" id="prenom" name="prenom" required
+                >Prénom * <input type="text" id="prenom" name="prenom" required
               /></label>
 
-              <label for="nom">Nom *<input type="text" id="nom" name="nom" required /></label>
+              <label for="nom"
+                >Nom *
+                <input type="text" id="nom" name="nom" required />
+              </label>
             </div>
 
             <div class="formulaire-input-text">
               <label for="email"
-                >Email *<input type="email" id="email" name="email" required
-              /></label>
+                >Email *
+                <input type="email" id="email" name="email" required />
+              </label>
 
               <label for="ville"
                 >Ville *<input type="text" id="ville" name="ville" required
@@ -57,7 +65,7 @@
 
             <div class="formulaire-input-text">
               <label for="naissance"
-                >Date de naissance *<input type="date" id="naissance" name="naissance" required
+                >Date de naissance * <input type="date" id="naissance" name="naissance" required
               /></label>
 
               <label for="magasin"
@@ -71,6 +79,7 @@
             </div>
           </div>
 
+          <!-- Checkboxes -->
           <section class="checkboxes">
             <div>
               <input type="checkbox" id="confidentialite" name="confidentialite" required />
@@ -92,6 +101,7 @@
             </div>
           </section>
 
+          <!-- Button -->
           <div>
             <button class="formulaire-button" type="submit">Récupérer le gain</button>
           </div>
@@ -99,6 +109,7 @@
       </div>
     </main>
 
+    <!-- FOOTER -->
     <footer>
       <nav>
         <ul>

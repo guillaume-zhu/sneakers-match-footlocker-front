@@ -11,6 +11,47 @@
   font-display: swap;
 }
 
+/* ------ VARIABLES ------ */
+:root {
+  /* Couleur */
+  --vert: #0eda8f;
+  --jaune: #fed702;
+  --fond-sombre: #b1a0ea;
+  --noir: #101010;
+
+  /* --- Headings (Titres) --- */
+  /* 150px */
+  --font-size-heading-large: 9.375rem;
+
+  /* 115px */
+  --font-size-heading-big: 7.1875rem;
+
+  /* 60px */
+  --font-size-heading-medium: 3.75rem;
+
+  /* 44px */
+  --font-size-heading-regular: 2.75rem;
+
+  /* 30px */
+  --font-size-heading-small: 1.875rem;
+
+  /* 24px */
+  --font-size-heading-compact: 1.5rem;
+
+  /* --- Body & UI (Texte courant) --- */
+  /* 30px  */
+  --font-size-body-button: 1.875rem;
+
+  /* 24px  */
+  --font-size-body-medium: 1.5rem;
+
+  /* 20px */
+  --font-size-body-small: 1.25rem;
+
+  /* 16px */
+  --font-size-caption: 1rem;
+}
+
 /* ------ GENERAL RÈGLES ------*/
 body {
   font-family: "Manrope", sans-serif;
@@ -31,10 +72,10 @@ main {
 }
 
 h1 {
-  font-family: "MaSuperPolice", serif;
+  font-family: "Tricky", serif;
 }
 
-/* ------ NO SCROLL ------ */
+/* No scroll */
 html,
 body {
   scrollbar-width: none;
@@ -45,47 +86,6 @@ body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
-}
-
-/* ------ VARIABLES ------ */
-:root {
-  /* Couleur */
-  --vert: #0eda8f;
-  --jaune: #fed702;
-  --fond-sombre: #b1a0ea;
-  --noir: #101010;
-
-  /* Font size */ /* --- Headings (Titres) --- */ /* 150px */
-  --font-size-heading-large: 9.375rem;
-
-  /* 115px */
-  --font-size-heading-big: 7.1875rem;
-
-  /* 60px */
-  --font-size-heading-medium: 3.75rem;
-
-  /* 44px */
-  --font-size-heading-regular: 2.75rem;
-
-  /* 30px */
-  --font-size-heading-small: 1.875rem;
-
-  /* 24px */
-  --font-size-heading-compact: 1.5rem;
-
-  /* --- Body & UI (Texte courant) --- */
-
-  /* 30px - Même taille que Heading Small */
-  --font-size-body-button: 1.875rem;
-
-  /* 24px Body medium et Body medium bold */
-  --font-size-body-medium: 1.5rem;
-
-  /* 20px */
-  --font-size-body-small: 1.25rem;
-
-  /* 16px */
-  --font-size-caption: 1rem;
 }
 
 /* ------ HEADER ------ */
@@ -106,19 +106,6 @@ header > div {
   scrollbar-width: none;
 }
 
-/* --- HEADER RESPONSIVE --- */
-@media (max-width: 768px) {
-  header > div {
-    height: 3rem;
-  }
-}
-
-@media (max-width: 480px) {
-  header > div {
-    height: 4rem;
-  }
-}
-
 /* ------ ACCUEIL ------ */
 .accueil {
   display: flex;
@@ -131,7 +118,6 @@ header > div {
 }
 
 .accueil > div {
-  /* border: 1px solid red; */
   width: 100%;
   height: 100%;
   z-index: 900;
@@ -205,6 +191,7 @@ header > div {
   text-align: center;
 }
 
+/* Bouton */
 .accueil-text-button button {
   background-color: var(--vert);
   border-radius: 50px;
@@ -294,135 +281,6 @@ header > div {
   top: 60%;
 }
 
-/* --- ACCUEIL RESPONSIVE --- */
-.accueil-center-image-mobile {
-  display: none;
-}
-/* max 1080px */
-@media (max-width: 1080px) {
-  .accueil-heading img {
-    width: 100%;
-  }
-  .accueil-text-button p {
-    font-size: 20px;
-  }
-
-  .accueil-shoes-group {
-    width: 70%;
-  }
-  .accueil-shoes-group > img {
-    width: 100%;
-  }
-}
-
-/* max 768px */
-@media (max-width: 768px) {
-  .accueil > div {
-    width: auto;
-  }
-  .accueil-center {
-    flex: 3;
-  }
-  .accueil-left,
-  .accueil-right {
-    width: 10px;
-    flex: 1;
-    overflow: hidden;
-  }
-
-  .accueil-shoes-group {
-    height: 400px;
-    left: 15px;
-    width: 100%;
-  }
-  .accueil-shoes-group > img {
-    width: 100%;
-  }
-  .accueil-fluid {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .accueil-left,
-  .accueil-right,
-  .accueil-gradient-bar,
-  .accueil-black-bars {
-    display: none;
-  }
-
-  /* bloc center */
-  .accueil-center {
-    padding: 40px;
-    justify-content: flex-start;
-  }
-
-  .accueil-heading img {
-    width: 60%;
-  }
-
-  .accueil-text-button p {
-    font-size: 18px;
-  }
-  .accueil-text-button button {
-    font-size: 22px;
-    width: 120px;
-    height: 52px;
-    padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .accueil-center-image-mobile {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: relative;
-  }
-  .accueil-center-image-mobile .accueil-ny-group {
-    width: 200px;
-    height: 200px;
-    bottom: -120px;
-    right: -50px;
-  }
-  .accueil-ny-group img {
-    border: 1px solid var(--noir);
-    border-radius: 8px;
-  }
-
-  .accueil-shoes-group {
-    width: 90px;
-    height: 200px;
-    position: relative;
-    margin-top: 10px;
-  }
-
-  .accueil-shoes-group img {
-    border: 1.5px solid var(--noir);
-    border-radius: 500px;
-  }
-  .accueil-shoes-group > img:first-child {
-    top: 0;
-  }
-  .accueil-shoes-group > img:nth-child(2) {
-    top: 25%;
-    left: 40%;
-  }
-  .accueil-shoes-group > img:nth-child(3) {
-    top: 50%;
-  }
-  .accueil-shoes-group > img:nth-child(4) {
-    top: 75%;
-    left: 40%;
-  }
-
-  .accueil-fluid {
-    transform: scaleX(-1);
-    width: 120%;
-  }
-}
-
 /* ------ JEUX ------ */
 
 .container-jeux {
@@ -479,110 +337,6 @@ header > div {
   position: relative;
 }
 
-/* media query de la version mi tablette mi téléphone */
-@media screen and (max-width: 864px) {
-  .title-jeux {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    font-size: var(--font-size-heading-medium);
-  }
-
-  /*  j'ajuste l'espacement des infos */
-  .game-infos {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .game-infos p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    font-size: 0.9rem;
-  }
-  /* j'ajuste la grid */
-
-  .memory-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(2, 140px);
-    grid-template-rows: repeat(4, 140px);
-    gap: 12px;
-    justify-content: center;
-    align-content: start;
-  }
-
-  .memory-grid-items {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 864px) {
-  .container-jeux {
-    justify-content: center;
-  }
-  .memory-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(2, 100px);
-    grid-template-rows: repeat(4, 100px);
-  }
-}
-
-/* media query vraiment pour les téléphones qui téléphonent*/
-@media screen and (max-width: 864px) and (min-height: 800px) {
-  .container-jeux section:first-child {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-top: 0px;
-  }
-  .title-jeux {
-    -webkit-text-stroke-width: 2px;
-    width: 400px;
-    line-height: 1;
-    margin-bottom: 0px;
-  }
-  .container-jeux {
-    justify-content: center;
-  }
-  .memory-grid {
-    display: grid;
-    width: 100%;
-    height: auto;
-    grid-template-columns: repeat(2, 100px);
-    grid-template-rows: repeat(4, 100px);
-  }
-  .title-rule {
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .container-jeux {
-    gap: 0px;
-  }
-  .container-jeux section:first-child {
-    gap: 10px;
-  }
-  .title-rule {
-    font-size: 18px;
-    width: 70%;
-  }
-  .title-jeux {
-    margin-top: 40px;
-  }
-}
-
 /* ------ FORMULAIRE ------ */
 .formulaire-page {
   display: flex;
@@ -607,7 +361,7 @@ header > div {
   box-shadow: 15px 15px 0px var(--noir);
 }
 
-/* --- Formulaire --- */
+/* Formulaire */
 form {
   display: flex;
   justify-content: space-between;
@@ -618,6 +372,7 @@ form {
   padding: 39px 164px 74px 164px;
 }
 
+/* Titre */
 .formulaire-page h1 {
   font-size: var(--font-size-heading-medium);
   font-family: "Manrope", sans-serif;
@@ -746,7 +501,291 @@ input[type="checkbox"] {
   align-items: center;
 }
 
+/* ------ FOOTER ------ */
+footer {
+  z-index: 1000;
+}
+
+footer > nav {
+  height: 1.5rem;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+footer > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 50px;
+  padding: 4px;
+  font-size: var(--font-size-caption);
+  text-align: center;
+}
+
+footer > nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ------ RESPONSIVE ------*/
+
+/* --- HEADER RESPONSIVE --- */
+/* Max 768px */
+@media (max-width: 768px) {
+  header > div {
+    height: 3rem;
+  }
+}
+
+/* Max 480px */
+@media (max-width: 480px) {
+  header > div {
+    height: 4rem;
+  }
+}
+
+/* --- ACCUEIL RESPONSIVE --- */
+.accueil-center-image-mobile {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .accueil-heading img {
+    width: 100%;
+  }
+  .accueil-text-button p {
+    font-size: 20px;
+  }
+
+  .accueil-shoes-group {
+    width: 70%;
+  }
+  .accueil-shoes-group > img {
+    width: 100%;
+  }
+}
+
+/* Max 768px */
+@media (max-width: 768px) {
+  .accueil > div {
+    width: auto;
+  }
+  .accueil-center {
+    flex: 3;
+  }
+  .accueil-left,
+  .accueil-right {
+    width: 10px;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .accueil-shoes-group {
+    height: 400px;
+    left: 15px;
+    width: 100%;
+  }
+  .accueil-shoes-group > img {
+    width: 100%;
+  }
+  .accueil-fluid {
+    width: 100%;
+  }
+}
+
+/* Max 480px */
+@media (max-width: 480px) {
+  .accueil-left,
+  .accueil-right,
+  .accueil-gradient-bar,
+  .accueil-black-bars {
+    display: none;
+  }
+
+  .accueil-center {
+    padding: 40px;
+    justify-content: flex-start;
+  }
+
+  .accueil-heading img {
+    width: 60%;
+  }
+
+  .accueil-text-button p {
+    font-size: 18px;
+  }
+  .accueil-text-button button {
+    font-size: 22px;
+    width: 120px;
+    height: 52px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .accueil-center-image-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+  .accueil-center-image-mobile .accueil-ny-group {
+    width: 200px;
+    height: 200px;
+    bottom: -120px;
+    right: -50px;
+  }
+  .accueil-ny-group img {
+    border: 1px solid var(--noir);
+    border-radius: 8px;
+  }
+
+  .accueil-shoes-group {
+    width: 90px;
+    height: 200px;
+    position: relative;
+    margin-top: 10px;
+  }
+
+  .accueil-shoes-group img {
+    border: 1.5px solid var(--noir);
+    border-radius: 500px;
+  }
+  .accueil-shoes-group > img:first-child {
+    top: 0;
+  }
+  .accueil-shoes-group > img:nth-child(2) {
+    top: 25%;
+    left: 40%;
+  }
+  .accueil-shoes-group > img:nth-child(3) {
+    top: 50%;
+  }
+  .accueil-shoes-group > img:nth-child(4) {
+    top: 75%;
+    left: 40%;
+  }
+
+  .accueil-fluid {
+    transform: scaleX(-1);
+    width: 120%;
+  }
+}
+
+/* --- JEUX RESPONSIVE --- */
+
+/* media query de la version mi tablette mi téléphone */
+@media screen and (max-width: 864px) {
+  .title-jeux {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-size: var(--font-size-heading-medium);
+  }
+
+  /*  j'ajuste l'espacement des infos */
+  .game-infos {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .game-infos p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 0.9rem;
+  }
+
+  /* j'ajuste la grid */
+  .memory-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(4, 140px);
+    gap: 12px;
+    justify-content: center;
+    align-content: start;
+  }
+
+  .memory-grid-items {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Max 860px */
+@media (max-width: 864px) {
+  .container-jeux {
+    justify-content: center;
+  }
+  .memory-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(4, 100px);
+  }
+}
+
+/* media query vraiment pour les téléphones qui téléphonent*/
+@media screen and (max-width: 864px) and (min-height: 800px) {
+  .container-jeux section:first-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 0px;
+  }
+  .title-jeux {
+    -webkit-text-stroke-width: 2px;
+    width: 400px;
+    line-height: 1;
+    margin-bottom: 0px;
+  }
+  .container-jeux {
+    justify-content: center;
+  }
+  .memory-grid {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(4, 100px);
+  }
+  .title-rule {
+    width: 90%;
+  }
+}
+
+/* Max 480px */
+@media (max-width: 480px) {
+  .container-jeux {
+    gap: 0px;
+  }
+  .container-jeux section:first-child {
+    gap: 10px;
+  }
+  .title-rule {
+    font-size: 18px;
+    width: 70%;
+  }
+  .title-jeux {
+    margin-top: 40px;
+  }
+}
+
 /* --- FORMULAIRE RESPONSIVE --- */
+/* Max 1080px */
 @media (max-width: 1080px) {
   form {
     padding: 39px 100px 79px;
@@ -756,6 +795,7 @@ input[type="checkbox"] {
   }
 }
 
+/* Max 856px */
 @media (max-width: 856px) {
   form {
     padding: 0px;
@@ -799,9 +839,7 @@ input[type="checkbox"] {
   }
 }
 
-@media (max-width: 768px) {
-}
-
+/* Max 480px */
 @media (max-width: 480px) {
   form {
     gap: 15px;
@@ -828,42 +866,15 @@ input[type="checkbox"] {
   }
 }
 
-/* ------ FOOTER ------ */
-footer {
-  z-index: 1000;
-}
-
-footer > nav {
-  height: 1.5rem;
-  width: 100vw;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-}
-
-footer > nav > ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  gap: 50px;
-  padding: 4px;
-  font-size: var(--font-size-caption);
-  text-align: center;
-}
-
-footer > nav > ul > li > a {
-  color: white;
-  text-decoration: none;
-}
-
 /* --- FOOTER RESPONSIVE --- */
+/* Max 768px */
 @media (max-width: 768px) {
   footer > nav {
     height: 3rem;
   }
 }
 
+/* Max 480px */
 @media (max-width: 480px) {
   footer > nav {
     height: 4rem;
