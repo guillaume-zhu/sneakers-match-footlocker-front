@@ -11,42 +11,6 @@
     font-display: swap;
 }
 
-/* ------ GENERAL RÈGLES ------*/
-body {
-    font-family: "Manrope", sans-serif;
-    /* overflow: hidden; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-    width: 100vw;
-    align-items: center;
-}
-
-main {
-    width: 100%;
-    flex: 1;
-    position: relative;
-    overflow: hidden;
-}
-
-h1 {
-    font-family: "MaSuperPolice", serif;
-}
-
-/* ------ NO SCROLL ------ */
-html,
-body {
-    scrollbar-width: none;
-
-    -ms-overflow-style: none;
-}
-
-html::-webkit-scrollbar,
-body::-webkit-scrollbar {
-    display: none;
-}
-
 /* ------ VARIABLES ------ */
 :root {
     /* Couleur */
@@ -88,6 +52,42 @@ body::-webkit-scrollbar {
     --font-size-caption: 1rem;
 }
 
+/* ------ RÈGLES GENERALES ------*/
+body {
+    font-family: "Manrope", sans-serif;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "MaSuperPolice", serif;
+}
+
+/* ------ NO SCROLL ------ */
+html,
+body {
+    scrollbar-width: none;
+
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* ------ HEADER ------ */
 header {
     z-index: 1001;
@@ -104,19 +104,6 @@ header > div {
     gap: 50px;
     padding: 4px;
     scrollbar-width: none;
-}
-
-/* --- HEADER RESPONSIVE --- */
-@media (max-width: 768px) {
-    header > div {
-        height: 3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    header > div {
-        height: 4rem;
-    }
 }
 
 /* ------ ACCUEIL ------ */
@@ -292,6 +279,125 @@ header > div {
     top: 60%;
 }
 
+.cta {
+    color: var(--noir);
+    text-decoration: none;
+}
+
+/* ------ JEUX ------ */
+
+.container-jeux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* padding: 40px 0px; */
+    align-content: center;
+    text-align: center;
+    color: white;
+    font-size: var(--font-size-body-medium);
+}
+
+/* le gros logo titre */
+.title-jeux {
+    font-family: "Tricky", sans-serif;
+    font-size: var(--font-size-heading-big);
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    color: transparent;
+
+    /* je trace les contours du texte  */
+    -webkit-text-stroke: 2px white;
+    letter-spacing: 2%;
+}
+
+/* la grid des cartes*/
+.memory-grid {
+    display: grid;
+    row-gap: 25px;
+    width: 732px;
+    height: 355.5px;
+    column-gap: 24px;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.game-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 732px;
+    margin: 0 auto 20px auto;
+}
+
+.jeux {
+    width: 100vw;
+    height: 100%;
+    background-image: url(../assets/images/gradient-bg2-regles-jeu.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+/* ------ FOOTER ------ */
+footer {
+    z-index: 1000;
+}
+
+footer > nav {
+    height: 1.5rem;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+footer > nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 50px;
+    padding: 4px;
+    font-size: var(--font-size-caption);
+    text-align: center;
+}
+
+footer > nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+/* les medias queries et la responsivité */
+
+/* --- HEADER RESPONSIVE --- */
+@media (max-width: 768px) {
+    header > div {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header > div {
+        height: 4rem;
+    }
+}
+
+/* --- FOOTER RESPONSIVE --- */
+@media (max-width: 768px) {
+    footer > nav {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    footer > nav {
+        height: 4rem;
+    }
+}
+
 /* --- ACCUEIL RESPONSIVE --- */
 .accueil-center-image-mobile {
     display: none;
@@ -422,62 +528,7 @@ header > div {
     }
 }
 
-/* ------ JEUX ------ */
-
-.container-jeux {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    /* padding: 40px 0px; */
-    align-content: center;
-    text-align: center;
-    color: white;
-    font-size: var(--font-size-body-medium);
-}
-
-/* le gros logo titre */
-.title-jeux {
-    font-family: "Tricky", sans-serif;
-    font-size: var(--font-size-heading-big);
-    text-align: center;
-    margin-bottom: 20px;
-    margin-top: 5%;
-    color: transparent;
-
-    /* je trace les contours du texte  */
-    -webkit-text-stroke: 2px white;
-    letter-spacing: 2%;
-}
-
-/* la grid des cartes*/
-.memory-grid {
-    display: grid;
-    row-gap: 25px;
-    width: 732px;
-    height: 355.5px;
-    column-gap: 24px;
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.game-infos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    width: 100%;
-    max-width: 732px;
-    margin: 0 auto 20px auto;
-}
-
-.jeux {
-    width: 100vw;
-    height: 100%;
-    background-image: url(../assets/images/gradient-bg2-regles-jeu.jpg);
-    background-size: cover;
-    position: relative;
-}
+/* page JEUX */
 
 /* media query de la version mi tablette mi téléphone */
 @media screen and (max-width: 864px) {
@@ -522,9 +573,13 @@ header > div {
         height: 100%;
         object-fit: cover;
     }
+    /* la barre disparait */
+    .accueil-gradient-bar {
+        display: none;
+    }
 }
 
-/* media query vraiment pour les téléphones qui téléphonent*/
+/* media query vraiment pour les téléphones longs*/
 @media screen and (max-width: 864px) and (min-height: 800px) {
     .container-jeux {
         justify-content: center;
@@ -543,47 +598,5 @@ header > div {
         height: auto;
         grid-template-columns: repeat(2, 100px);
         grid-template-rows: repeat(4, 100px);
-    }
-}
-
-/* ------ FOOTER ------ */
-footer {
-    z-index: 1000;
-}
-
-footer > nav {
-    height: 1.5rem;
-    width: 100vw;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
-
-footer > nav > ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    gap: 50px;
-    padding: 4px;
-    font-size: var(--font-size-caption);
-    text-align: center;
-}
-
-footer > nav > ul > li > a {
-    color: white;
-    text-decoration: none;
-}
-
-/* --- FOOTER RESPONSIVE --- */
-@media (max-width: 768px) {
-    footer > nav {
-        height: 3rem;
-    }
-}
-
-@media (max-width: 480px) {
-    footer > nav {
-        height: 4rem;
     }
 }
