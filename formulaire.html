@@ -1,118 +1,118 @@
 <!doctype html>
 <html lang="fr-FR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sneakers Match - Foot Locker</title>
-        <meta
-            name="description"
-            content="remplissez le formulaire pour récupérer votre gain !"
-        />
-        <link rel="stylesheet" href="./src/styles/reset.css" />
-        <link rel="stylesheet" href="./src/styles/main.css" />
-        <link
-            rel="shortcut icon"
-            href="./src/assets/images/favicon.png"
-            type="image/png"
-        />
-    </head>
-    <body>
-        <header>
-            <p>Foot Locker Foot Locker Foot Locker Foot Locker Foot Locker</p>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers Match - Foot Locker</title>
+    <meta name="description" content="remplissez le formulaire pour récupérer votre gain !" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/main.css" />
+    <link rel="shortcut icon" href="./src/assets/images/favicon.png" type="image/png" />
+  </head>
 
-        <main>
-            <article>
-                <h1>Formulaire</h1>
+  <body>
+    <header>
+      <div>
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+        <img src="./src/assets/images/foot-locker-logo.png" alt="Logo" />
+      </div>
+    </header>
 
-                <form action="#" method="post">
-                    <div>
-                        <label for="prenom">Prénom *</label>
-                        <input type="text" id="prenom" name="prenom" required />
+    <main class="container formulaire-page">
+      <div class="formulaire-bloc">
+        <form action="#" method="post">
+          <h1>Formulaire</h1>
 
-                        <label for="nom">Nom *</label>
-                        <input type="text" id="nom" name="nom" required />
-                    </div>
+          <div class="formulaire-input-group">
+            <div class="formulaire-input-text">
+              <label for="prenom"
+                >Prénom *<input type="text" id="prenom" name="prenom" required
+              /></label>
 
-                    <div>
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required />
+              <label for="nom">Nom *<input type="text" id="nom" name="nom" required /></label>
+            </div>
 
-                        <label for="ville">Ville *</label>
-                        <input type="text" id="ville" name="ville" required />
-                    </div>
+            <div class="formulaire-input-text">
+              <label for="email"
+                >Email *<input type="email" id="email" name="email" required
+              /></label>
 
-                    <div>
-                        <label for="naissance">Date de naissance *</label>
-                        <input
-                            type="date"
-                            id="naissance"
-                            name="naissance"
-                            required
-                        />
+              <label for="ville"
+                >Ville *<input type="text" id="ville" name="ville" required
+              /></label>
+            </div>
 
-                        <label for="magasin">Magasin préféré *</label>
-                        <select id="magasin" name="magasin" required>
-                            <option value="">Sélectionnez un magasin</option>
-                        </select>
-                    </div>
+            <div class="formulaire-input-text">
+              <label for="naissance"
+                >Date de naissance *<input type="date" id="naissance" name="naissance" required
+              /></label>
 
-                    <section>
-                        <div>
-                            <input
-                                type="checkbox"
-                                id="confidentialite"
-                                name="confidentialite"
-                                required
-                            />
-                            <label for="confidentialite"
-                                >J'accepte la politique de
-                                <strong>confidentialité</strong>*</label
-                            >
-                        </div>
+              <label for="magasin"
+                >Magasin préféré *
+                <span class="select-wrap">
+                  <select id="magasin" name="magasin" required>
+                    <option value="">Sélectionnez un magasin</option>
+                  </select>
+                </span>
+              </label>
+            </div>
+          </div>
 
-                        <div>
-                            <input
-                                type="checkbox"
-                                id="reglement"
-                                name="reglement"
-                                required
-                                checked
-                            />
-                            <label for="reglement"
-                                >J'accepte le <strong>règlement</strong>* du
-                                jeu-concours</label
-                            >
-                        </div>
+          <section class="checkboxes">
+            <div>
+              <input type="checkbox" id="confidentialite" name="confidentialite" required />
+              <label for="confidentialite"
+                >J'accepte la politique de <span>confidentialité</span>*</label
+              >
+            </div>
 
-                        <div>
-                            <input
-                                type="checkbox"
-                                id="newsletter"
-                                name="newsletter"
-                            />
-                            <label for="newsletter"
-                                >Je m'inscris à la newsletter pour obtenir des
-                                promotions</label
-                            >
-                        </div>
-                    </section>
+            <div>
+              <input type="checkbox" id="reglement" name="reglement" required checked />
+              <label for="reglement">J'accepte le <span>règlement</span>* du jeu-concours</label>
+            </div>
 
-                    <div>
-                        <button type="submit">Récupérer le gain</button>
-                    </div>
-                </form>
-            </article>
-        </main>
+            <div>
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter"
+                >Je m'inscris à la newsletter pour obtenir des promotions</label
+              >
+            </div>
+          </section>
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="#">mentions légales</a></li>
-                    <li>© 2026 Foot locker Tous droits réservés</li>
-                    <li><a href="#">conditions générales</a></li>
-                </ul>
-            </nav>
-        </footer>
-    </body>
+          <div>
+            <button class="formulaire-button" type="submit">Récupérer le gain</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="#">mentions légales</a></li>
+          <li>© 2026 Foot locker Tous droits réservés</li>
+          <li><a href="#">conditions générales</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <img
+      class="accueil-gradient-bar"
+      src="./src/assets/images/gradient-bar-fin-jeu-formulaire.png"
+      alt="gradient bar"
+    />
+  </body>
 </html>
