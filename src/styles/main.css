@@ -1,4 +1,4 @@
-/* ------ FONT IMPORT ------ */
+b/* ------ FONT IMPORT ------ */
 /* Manrope */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
@@ -644,6 +644,96 @@ input[type="checkbox"] {
   box-shadow: 5px 5px 0 0 var(--noir);
   display: flex;
   align-items: center;
+}
+
+/* ------ FIN JEU ------ */
+
+/* Cards et contenu */
+.win {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/gradient-bg5-fin-lot.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.win-contenus {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.win-contenus p:first-child {
+  font-size: var(--font-size-heading-compact);
+  font-weight: 600;
+  color: white;
+}
+
+
+.win-contenus h2 {
+  font-size: var(--font-size-heading-regular);
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  line-height: 120%;
+}
+
+.win-contenus span {
+  font-weight: 500;
+}
+
+.win-contenus p:last-child {
+  font-size: var(--font-size-body-medium);
+  font-weight: 300;
+  text-align: center;
+  color: white;
+  line-height: 160%;
+}
+
+.win-cards {
+  position: relative;
+  /* border: 1px solid blue; */
+  width: 473px;
+  height: 467px;
+}
+
+.win-cards > img {
+  position: absolute;
+}
+
+.win-cards img:first-child {
+z-index: 10;
+top: 0;
+right: 0;
+}
+.win-cards img:nth-child(2) {
+z-index: 9;
+top: 35px;
+left: 35px
+}
+
+.win-cards img:nth-child(3){
+z-index: 8;
+bottom: 0;
+left: 0;
+}
+
+
+/* Élements absolute */
+.win-black-bars {
+  left: 0;
+}
+.win-fluid {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /* ------ FOOTER ------ */
