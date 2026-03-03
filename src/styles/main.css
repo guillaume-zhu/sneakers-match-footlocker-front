@@ -442,6 +442,9 @@ header > div {
 /* éléments décoratifs de la card */
 .fin-jeu-copie {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* soleil */
@@ -474,7 +477,6 @@ header > div {
 /* étoile */
 .fin-jeu-etoile {
   position: absolute;
-  width: 40%;
   bottom: -60px;
   right: -160px;
   z-index: 11;
@@ -924,6 +926,65 @@ footer > nav > ul > li > a {
   }
   .title-jeux {
     margin-top: 40px;
+  }
+}
+/* --- FIN JEU RESPONSIVE --- */
+@media (max-width: 1024px) {
+  .fin-jeu-card {
+    width: 500px;
+  }
+  .fin-jeu-card p {
+    width: 80%;
+  }
+  .fin-jeu-fluid {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .fin-jeu-card {
+    width: 400px;
+    height: 60vh;
+  }
+  .fin-jeu-title {
+    position: absolute;
+    top: -70px;
+  }
+  .fin-jeu-etoile {
+    width: 250px;
+    right: -130px;
+  }
+  .fin-jeu-gradient-bar {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .fin-jeu-card {
+    width: 327px;
+    height: 80%;
+    padding: 60px 30px;
+    gap: 20px;
+  }
+  .fin-jeu-title {
+    font-size: 8rem;
+  }
+  .fin-jeu-card p {
+    font-size: 1.125rem;
+    width: 100%;
+  }
+  .fin-jeu button {
+    font-size: 1.375rem;
+  }
+  .fin-jeu-soleil-group {
+    left: -90px;
+    top: -150px;
+  }
+  .fin-jeu-soleil-group img {
+    width: 204px;
+  }
+  .fin-jeu-etoile {
+    width: 246px;
+    right: -170px;
   }
 }
 
