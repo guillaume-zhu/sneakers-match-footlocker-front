@@ -16,7 +16,7 @@
   /* Couleur */
   --vert: #0eda8f;
   --jaune: #fed702;
-  --fond-sombre: #b1a0ea;
+  --violet: #b1a0ea;
   --noir: #101010;
 
   /* --- Headings (Titres) --- */
@@ -52,7 +52,7 @@
   --font-size-caption: 1rem;
 }
 
-/* ------ GENERAL RÈGLES ------*/
+/* ------ RÈGLES GÉNÉRALES ------*/
 body {
   font-family: "Manrope", sans-serif;
   /* overflow: hidden; */
@@ -86,6 +86,17 @@ body {
 html::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
+}
+
+button {
+  background-color: var(--vert);
+  border-radius: 50px;
+  border: 3px solid var(--noir);
+  width: fit-content;
+  height: 70px;
+  font-size: var(--font-size-body-button);
+  box-shadow: 5px 5px 0 0 #101010;
+  padding: 15px 40px;
 }
 
 /* ------ HEADER ------ */
@@ -335,6 +346,72 @@ header > div {
   background-image: url(../assets/images/gradient-bg2-regles-jeu.jpg);
   background-size: cover;
   position: relative;
+}
+
+/* ------ FIN DU JEU ------ */
+/* Card et contenus */
+.fin-jeu {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../assets/images/gradient-bg3-fin-jeu.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.fin-jeu-card {
+  width: 853px;
+  height: 574px;
+  border: 1px solid red;
+  border-radius: 25px;
+  border: 3px solid var(--noir);
+  box-shadow: 15px 15px 0 0 var(--noir);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  background-color: var(--violet);
+  gap: 50px;
+  z-index: 10;
+}
+
+.fin-jeu-title {
+  position: relative;
+  isolation: isolate;
+  font-size: 9.375rem;
+  margin-bottom: -35px;
+}
+
+.fin-jeu-title > span {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(242deg, #fed702 -19.97%, #0eda8f 88.54%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px var(--noir);
+}
+
+.fin-jeu-title::before {
+  position: absolute;
+  z-index: -1;
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  transform: translate(7px, 1px);
+  -webkit-text-stroke: 0;
+  -webkit-text-fill-color: var(--noir);
+}
+
+.fin-jeu-card p {
+  font-size: var(--font-size-body-medium);
+  font-weight: 500;
+  text-align: center;
+  width: 50%;
+  line-height: 160%;
 }
 
 /* ------ FORMULAIRE ------ */
