@@ -99,11 +99,6 @@ button {
     padding: 15px 40px;
 }
 
-button a {
-    color: var(--noir);
-    text-decoration: none;
-}
-
 /* ------ HEADER ------ */
 header {
     z-index: 1001;
@@ -122,7 +117,7 @@ header > div {
     scrollbar-width: none;
 }
 
-/* ----------------------------------------- ACCUEIL ----------------------------------------- */
+/* ------ ACCUEIL ------ */
 .accueil {
     display: flex;
     width: 100vw;
@@ -297,92 +292,7 @@ header > div {
     top: 60%;
 }
 
-/* ----------------------------------------- REGLES ----------------------------------------- */
-
-.container-regles {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    color: var(--noir);
-    font-size: var(--font-size-body-medium);
-    display: flex;
-    width: 100vw;
-    height: 100%;
-    background-image: url(../assets/images/gradient-bg2-regles-jeu.jpg);
-    background-repeat: none;
-    background-size: cover;
-    position: relative;
-}
-
-.regles-bloc {
-    max-width: 850px;
-    width: 80%;
-    margin-top: 50px;
-    padding-bottom: 45px;
-    padding-top: 25px;
-    background-color: var(--violet);
-    border: 3px solid var(--noir);
-    border-radius: 40px;
-    box-shadow: 15px 15px 0px var(--noir);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-}
-
-.regles-bloc > h1 {
-    font-family: "Manrope", sans-serif;
-    font-size: var(--font-size-heading-medium);
-    font-weight: 600;
-}
-
-.regles-bloc > section > h2 {
-    font-size: var(--font-size-heading-small);
-    font-weight: 600;
-}
-
-.container-regles p {
-    margin-top: 5px;
-}
-
-.container-regles ul {
-    margin-top: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.voyage {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 5px;
-}
-
-.voyage p {
-    margin-top: 0px;
-}
-
-.star {
-    display: none;
-}
-
-.boule {
-    display: none;
-}
-
-.black-bars {
-    display: none;
-}
-
-#vaguerule {
-    display: none;
-}
-
-/* ----------------------------------------- JEUX ----------------------------------------- */
+/* -------------------------------------- JEUX --------------------------------------- */
 
 .container-jeux {
     display: flex;
@@ -572,7 +482,7 @@ header > div {
     z-index: 11;
 }
 
-/* ----------------------------------------- FORMULAIRE --------------------------------------- */
+/* ------------------------------------------- FORMULAIRE ---------------------------------------- */
 .formulaire-page {
     display: flex;
     justify-content: center;
@@ -723,14 +633,6 @@ input[type="checkbox"] {
     accent-color: #000;
 }
 
-/* liens vers confidentialité et règlement */
-
-.checkboxes span {
-    color: var(--noir);
-    font-weight: 800;
-    text-decoration: underline;
-}
-
 /* Button */
 .formulaire-button {
     background-color: var(--vert);
@@ -864,9 +766,9 @@ footer > nav > ul > li > a {
     text-decoration: none;
 }
 
-/* ----------------------------------------- RESPONSIVE ----------------------------------------- */
+/* ----------------------------------- RESPONSIVE ----------------------------------------*/
 
-/* ---------- HEADER RESPONSIVE --------- */
+/* --- HEADER RESPONSIVE --- */
 /* Max 768px */
 @media (max-width: 768px) {
     header > div {
@@ -881,7 +783,7 @@ footer > nav > ul > li > a {
     }
 }
 
-/* ---------- ACCUEIL RESPONSIVE --------- */
+/* --- ACCUEIL RESPONSIVE --- */
 .accueil-center-image-mobile {
     display: none;
 }
@@ -1010,81 +912,7 @@ footer > nav > ul > li > a {
     }
 }
 
-/* -------------- REGLES RESPONSIVE ----------- */
-
-@media (max-width: 768px) {
-    body {
-        position: relative;
-    }
-
-    .regles-bloc > h1 {
-        font-size: 40px;
-    }
-
-    .regles-bloc {
-        height: auto;
-        gap: 20px;
-    }
-
-    .regles-bloc > section > h2 {
-        font-size: var(--font-size-body-medium);
-        font-weight: 600;
-    }
-
-    .regles-bloc > section > p {
-        font-size: 18px;
-    }
-
-    .regles-bloc > section > ul {
-        font-size: 18px;
-    }
-
-    .accueil-gradient-bar {
-        display: none;
-    }
-
-    .black-bars {
-        display: block;
-        position: absolute;
-        height: 100vh;
-        z-index: 0;
-        width: 158px;
-    }
-
-    .regles-bloc {
-        z-index: 2;
-    }
-
-    .star {
-        display: block;
-        position: absolute;
-        top: 8%;
-        left: 5%;
-        width: 12vh;
-        height: auto;
-        /* width: 134px;
-        height: 135px; */
-        z-index: 3;
-    }
-
-    .boule {
-        display: block;
-        position: absolute;
-        bottom: 8%;
-        right: 5%;
-        width: 13vh;
-        height: auto;
-        z-index: 3;
-    }
-
-    #vaguerule {
-        display: block;
-        transform: scaleX(-1);
-        width: 120%;
-    }
-}
-
-/* ---------- JEUX RESPONSIVE --------- */
+/* --- JEUX RESPONSIVE --- */
 
 /* media query de la version mi tablette mi téléphone */
 @media screen and (max-width: 864px) {
@@ -1191,7 +1019,7 @@ footer > nav > ul > li > a {
         margin-top: 40px;
     }
 }
-/* ---------- FIN JEU RESPONSIVE --------- */
+/* --- FIN JEU RESPONSIVE --- */
 @media (max-width: 1024px) {
     .fin-jeu-card {
         width: 500px;
@@ -1333,7 +1161,7 @@ footer > nav > ul > li > a {
     }
 }
 
-/* ------------------- WIN RESPONSIVE ------------------- */
+/* --- WIN RESPONSIVE --- */
 
 @media (max-width: 860px) {
     .win h2 {
@@ -1395,7 +1223,7 @@ footer > nav > ul > li > a {
     }
 }
 
-/* ---------- FOOTER RESPONSIVE -------- */
+/* --- FOOTER RESPONSIVE --- */
 /* Max 768px */
 @media (max-width: 768px) {
     footer > nav {
